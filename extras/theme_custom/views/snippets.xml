@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="snippets" inherit_id="website.snippets" name="Theme snippets">
+  <xpath expr="//*[@id='snippet_structure']/div[1]" position="before">
+    <div>
+      <div class="oe_snippet_thumbnail">
+        <img class="oe_snippet_thumbnail_img" src="/theme_custom/static/src/img/snippets/snippet_work.png"/>
+        <span class="oe_snippet_thumbnail_title">Work</span>
+      </div>
+      <section class="oe_snippet_body snippet_work">
+        <div class="row mt centered">
+          <div class="col-lg-4">
+              <a class="zoom green" href="/page/work">
+                <img class="img-responsive" src="/theme_custom/static/src/img/portfolio/port01.jpg" alt="" />
+              </a>
+              <p>APE</p>
+          </div>
+          <div class="col-lg-4">
+              <a class="zoom green" href="/page/work">
+                <img class="img-responsive" src="/theme_custom/static/src/img/portfolio/port02.jpg" alt="" />
+              </a>
+              <p>RAIDERS</p>
+          </div>
+          <div class="col-lg-4">
+              <a class="zoom green" href="/page/work">
+                <img class="img-responsive" src="/theme_custom/static/src/img/portfolio/port03.jpg" alt="" />
+              </a>
+              <p>VIKINGS</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </xpath>
+</template>
+
+</data>
+</openerp>

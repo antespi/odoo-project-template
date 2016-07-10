@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Custom purchase quotation -->
+<!-- Inherit from: /addons/purchase/views/report_purchasequotation.xml -->
+<!--
+<template id="report_purchasequotation_document"
+          inherit_id="purchase.report_purchasequotation_document"
+          name="Custom PDF purchas quotation">
+    <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+            ...
+        </div>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

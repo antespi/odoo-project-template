@@ -1,0 +1,95 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          odoo-cliente8
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start Odoo daemon at boot time
+# Description:       Enable service provided by daemon.
+# X-Interactive:     true
+### END INIT INFO
+## more info: http://wiki.debian.org/LSBInitScripts
+
+# DAEMON
+# Path to Odoo daemon executable
+DAEMON=/opt/odoo/common/openerp/v8/odoo.py
+
+# NAME
+# Name of this init script, must be equal to 'Provides' name in this fie header
+NAME=odoo-cliente8
+
+# DESC
+# Description appears when start/stop is called
+DESC="Odoo - Cliente Local v8.0"
+
+# CONFIG
+# Config file to use, review this when there are more than one Odoo daemon running in this machine
+CONFIG=/etc/odoo/odoo-cliente8.conf
+
+# LOGFILE
+# Log file to use, review this when there are more than one Odoo daemon running in this machine
+LOGFILE=/opt/odoo/log/odoo-cliente8.log
+
+# USER
+# User executes Odoo daemon
+USER=odoo
+
+# GROUP
+# Main group of USER
+GROUP=$USER
+
+# Advance configuration. You should not to change these
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+PIDFILE=/var/run/${NAME}.pid
+export LOGNAME=$USER
+
+# Initialization script. You should not to chage anything bellow this line
+test -x $DAEMON || exit 0
+set -e
+
+function _start() {
+    start-stop-daemon --start --quiet --pidfile $PIDFILE --chuid $USER:$GROUP --background --make-pidfile --exec $DAEMON -- --config $CONFIG --logfile $LOGFILE --unaccent
+}
+
+function _stop() {
+    start-stop-daemon --stop --quiet --pidfile $PIDFILE --oknodo --retry 3
+    rm -f $PIDFILE
+}
+
+function _status() {
+    start-stop-daemon --status --quiet --pidfile $PIDFILE
+    return $?
+}
+
+
+case "$1" in
+        start)
+                echo -n "Starting $DESC: "
+                _start
+                echo "ok"
+                ;;
+        stop)
+                echo -n "Stopping $DESC: "
+                _stop
+                echo "ok"
+                ;;
+        restart|force-reload)
+                echo -n "Restarting $DESC: "
+                _stop
+                sleep 1
+                _start
+                echo "ok"
+                ;;
+        status)
+                echo -n "Status of $DESC: "
+                _status && echo "running" || echo "stopped"
+                ;;
+        *)
+                N=/etc/init.d/$NAME
+                echo "Usage: $N {start|stop|restart|force-reload|status}" >&2
+                exit 1
+                ;;
+esac
+
+exit 0

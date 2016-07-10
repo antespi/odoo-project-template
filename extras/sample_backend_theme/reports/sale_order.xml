@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Custom sale order -->
+<!-- Inherit from: /addons/sale/views/report_saleorder.xml -->
+<!--
+<template id="report_saleorder_document"
+          inherit_id="sale.report_saleorder_document"
+          name="Custom PDF sale order">
+    <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+            ...
+        </div>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

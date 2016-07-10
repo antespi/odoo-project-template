@@ -1,0 +1,26 @@
+%YAML 1.2
+---
+openerp:
+    host: localhost
+    port: 8069
+    username: your_username
+    password: your_password
+    dbname: your_database_name
+    context:
+        lang : es_ES
+parsers:
+    csv:
+        delimiter: ','
+        quotechar: '"'
+    dbf:
+        encoding: iso8859-1
+    odoo:
+        server: localhost
+        port: 8069
+        user: your_username
+        password: your_password
+        context:
+            lang : es_ES
+        # To be defined in inherited method models_load()
+        # model: project.task.work
+        # domain: [['hr_analytic_timesheet_id', '=', False]]

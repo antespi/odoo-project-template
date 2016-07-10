@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+openerp:
+    host: localhost
+    port: 8069
+#    protocol: xmlrpc
+    username: admin
+    password: admin
+    dbname: customer-odoo-prod_antiun_net
+    context:
+        lang : es_ES
+parsers:
+    csv:
+        delimiter: ','
+        quotechar: '"'
+    dbf:
+        encoding: iso8859-1
+    odoo:
+        server: localhost
+        port: 8069
+        user: admin
+        password: admin
+        context:
+            lang : es_ES
+        # To be defined in inherited method models_load()
+        # model: project.task.work
+        # domain: [['hr_analytic_timesheet_id', '=', False]]

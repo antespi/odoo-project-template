@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<openerp>
+<data>
+
+<!-- Option sample to show in customize menu, changing a tag class
+<template id="option_affix_top_menu" name="Affix top menu"
+          inherit_id="website.layout" customize_show="True" active="False">
+    <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+        <attribute name="data-top_menu_affix">top_menu_affix</attribute>
+    </xpath>
+</template>
+-->
+
+<!-- Option sample to show in customize menu, including a new CSS
+<template id="option_font_sourcesans" name="SourceSans Font"
+          inherit_id="website_less.assets_frontend" customize_show="True" active="False">
+    <xpath expr="//link[last()]" position="after">
+        <link href="/theme_template_multi/static/src/less/options/fonts/source-sans_multi.css" rel="stylesheet" type="text/css"/>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

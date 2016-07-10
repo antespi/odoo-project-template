@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="my_controller_form" name="Form" page="True">
+  <t t-call="website.layout">
+    <div id="wrap">
+      <div class="oe_structure"/>
+      <div class="container">
+        <div class="form-container semitransparent mt64 mb64">
+          <form action="/crm/signup" class="" enctype="multipart/form-data" method="post">
+            <div t-attf-class="form-group #{error and 'field_one' in error and 'has-error' or ''}">
+              <input class="form-control"
+                     name="field_one"
+                     placeholder="company name"
+                     required="True"
+                     t-attf-value="#{field_one or ''}"
+                     type="text"/>
+            </div>
+            <div t-attf-class="form-group #{error and 'field_two' in error and 'has-error' or ''}">
+              <input class="form-control"
+                     name="field_two"
+                     placeholder="company name"
+                     t-attf-value="#{field_two or ''}"
+                     type="text"/>
+            </div>
+            <div class="form-group mb0">
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="oe_structure"/>
+    </div>
+  </t>
+</template>
+
+</data>
+</openerp>

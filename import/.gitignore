@@ -1,0 +1,4 @@
+photos/*.jpg
+photos/*.bmp
+old/*
+*_import_log.csv

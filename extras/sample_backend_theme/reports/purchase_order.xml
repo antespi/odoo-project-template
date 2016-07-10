@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Custom purchase order -->
+<!-- Inherit from: /addons/purchase/views/report_purchaseorder.xml -->
+<!--
+<template id="report_purchaseorder_document"
+          inherit_id="purchase.report_purchaseorder_document"
+          name="Custom PDF purchase order">
+    <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+            ...
+        </div>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

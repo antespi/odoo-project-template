@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<!-- Method 1 : Add assets into website.assets_frontend -->
+<!--
+<template id="assets"
+          inherit_id="website.assets_frontend"
+          name="Theme Assets"
+          priority="20">
+    <xpath expr="." position="inside">
+        <link rel="stylesheet" href="/theme_custom/static/src/css/theme.css"/>
+        <script type="text/javascript" src="/theme_custom/static/src/js/theme.js"></script>
+    </xpath>
+</template>
+-->
+
+<!-- Method 2 : Add assets into website.layout -->
+<template id="layout"
+          inherit_id="website.layout"
+          name="Assets layout">
+    <xpath expr="//head" position="inside">
+        <t t-call-assets="theme_custom.theme_assets" t-js="false"/>
+    </xpath>
+    <xpath expr="//body" position="inside">
+        <t t-call-assets="theme_custom.theme_assets" t-css="false"/>
+    </xpath>
+</template>
+<template id="theme_assets"
+          name="Theme Assets">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/theme_custom/static/src/css/theme.css"/>
+
+    <!-- Custom scripts for this template -->
+    <script type="text/javascript" src="/theme_custom/static/src/js/theme.js"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</template>
+
+</data>
+</openerp>

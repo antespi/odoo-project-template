@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<openerp>
+<data>
+
+<!-- Add custom images for using them in snippets or snippets options
+<record id="img_library_01" model="ir.attachment">
+    <field name="name">img_library_01.jpg</field>
+    <field name="datas_fname">img_library_01.jpg</field>
+    <field name="res_model">ir.ui.view</field>
+    <field name="type">url</field>
+    <field name="url">/theme_template/static/src/img/library/img_library_01.jpg</field>
+</record>
+
+<record id="img_library_02" model="ir.attachment">
+    <field name="name">img_library_02.jpg</field>
+    <field name="datas_fname">img_library_02.jpg</field>
+    <field name="res_model">ir.ui.view</field>
+    <field name="type">url</field>
+    <field name="url">/theme_template/static/src/img/library/img_library_02.jpg</field>
+</record>
+
+<record id="img_library_03" model="ir.attachment">
+    <field name="name">img_library_03.jpg</field>
+    <field name="datas_fname">img_library_03.jpg</field>
+    <field name="res_model">ir.ui.view</field>
+    <field name="type">url</field>
+    <field name="url">/theme_template/static/src/img/library/img_library_03.jpg</field>
+</record>
+-->
+
+</data>
+</openerp>
+

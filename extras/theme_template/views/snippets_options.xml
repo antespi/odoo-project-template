@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<openerp>
+<data>
+
+<!-- Extend options samples
+<template id="snippet_options" inherit_id="website_less.snippet_options">
+-->
+    <!-- Add more options to a common menu
+    <xpath expr="//div[@data-js='background']//ul[@class='dropdown-menu']/li" position="before">
+        <li class="dropdown-submenu">
+            <a tabindex="-2" href="#">Template backgrounds</a>
+            <ul class="dropdown-menu backgrounds">
+                <li data-select_class="bg-img-01"><a><img src="/theme_template/static/src/img/backgrounds/bg_img_thumb_01.jpg" class="bg_option_menu_img center-block"/></a></li>
+            </ul>
+        </li>
+    </xpath>
+    -->
+    <!-- Change data-selectors for common snippets options
+    <xpath expr="//div[@data-js='background']" position="attributes">
+      <attribute name="data-selector">.carousel, .parallax, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_big_image, .s_banner, .s_animated_boxes > .item, .s_masonry_block .item, .s_masonry_block .block,  section:not(.s_google_map)</attribute>
+    </xpath>
+    -->
+
+    <!-- Add new options menu for some snippets
+    <xpath expr="//div[@data-js='blog-style']" position="after">
+      <div data-js='bg_fx'
+           data-selector="[class^='s_'], section:not(.s_google_map, .graph_accordition), .s_animated_boxes .item, .s_animated_boxes .slide">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-sliders"></i>Background Effects</a>
+          <ul class="dropdown-menu">
+            <li data-select_class=""><a>No effects</a></li>
+          </ul>
+        </li>
+      </div>
+      <div data-selector=".progress"
+           data-drop-near="p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress">
+      </div>
+    </xpath>
+    -->
+<!--
+</template>
+-->
+
+</data>
+</openerp>

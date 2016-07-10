@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Custom invoice -->
+<!-- Inherit from: /addons/account/views/report_invoice.xml -->
+<!--
+<template id="report_invoice_document" inherit_id="account.report_invoice_document"
+          name="Custom PDF Invoice">
+    <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+            ...
+        </div>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

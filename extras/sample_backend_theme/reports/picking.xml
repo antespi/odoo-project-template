@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Custom picking -->
+<!-- Inherit from: /addons/stock/views/report_stockpicking.xml -->
+<!--
+<template id="report_picking" inherit_id="stock.report_picking"
+          name="Custom PDF Picking" priority="20">
+    <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+            ...
+        </div>
+    </xpath>
+</template>
+-->
+
+</data>
+</openerp>

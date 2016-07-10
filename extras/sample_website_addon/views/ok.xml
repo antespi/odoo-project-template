@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="my_controller_ok"
+          name="Signup Ok">
+    <t t-call="website.layout">
+      <div id="wrap">
+        <div class="oe_structure"/>
+        <div class="container">
+            <h1>Ok!</h1>
+        </div>
+        <div class="oe_structure"/>
+      </div>
+    </t>
+</template>
+
+
+</data>
+</openerp>

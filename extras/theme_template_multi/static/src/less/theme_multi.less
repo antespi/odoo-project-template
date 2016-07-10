@@ -1,0 +1,15 @@
+// -*- coding: utf-8 -*-
+// © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+#template_ns {
+  .template_wrap_ns() {
+    @import "../../lib/bootstrap/less/bootstrap.less";
+    @import "theme.vars.less";
+    @import "theme.less";
+  }
+}
+
+.template {
+  #template_ns > .template_wrap_ns;
+}

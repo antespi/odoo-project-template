@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Stock ppicking wave new PDF -->
+<!--
+<template id="report_stock_picking_wave" name="PDF stock picking wave">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="report.external_layout">
+                <div class="page">
+                    ...
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+
+<report string="Picking"
+        id="action_report_stock_picking_wave"
+        model="stock.picking.wave"
+        report_type="qweb-pdf"
+        name="sample_backend_theme.report_stock_picking_wave"
+        file="sample_backend_theme.report_stock_picking_wave"/>
+-->
+
+</data>
+</openerp>
